@@ -1,0 +1,169 @@
+:root{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --text-family : "Roboto Mono";
+    --text-primary: #9381FF;
+    --text-secondary: #ffffff;
+    --text-third:rgba(255, 255, 255, 0.719);
+    /* --bg-primary: #1f1d1d; */
+    --bg-primary: #171616;
+    --bg-secondary: #2f3e46;
+    /* --sidebar-primary: #4f4c4c94; */
+    --sidebar-primary: #4f4c4c6c; 
+    --sidebar-secondary: #9381FF;
+    --sidebar-third: #575656;
+
+
+    /* transition vars */
+    --trans-1: .05s ease;
+    --trans-2: .2s ease;
+    --trans-3: .3s ease;
+    --trans-4: .4s ease;
+
+}
+
+.roboto-mono-Font-class {
+  font-family: "Roboto Mono", monospace;
+}
+
+.App{
+  display: flex;
+  
+  width: 100vw;
+  height: 100vh;
+  margin: none;
+  padding: none;
+  border: none;
+
+}
+
+body{
+  background-color: var(--bg-primary);
+  margin: 0;
+  padding: 0;
+}
+
+.Sidebar{
+  width: 270px;
+  height: 100vh;
+  background-color: var(--sidebar-primary);
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  
+  
+
+
+
+}
+
+.Sidebar .Sidebar-shelf{
+
+  margin-top: 25px;
+  padding: 0;
+  margin-left: 15%;
+  list-style: none;
+  display: flex;
+  flex-direction: column  ;
+
+}
+.Sidebar .Sidebar-shelf li{
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-family: var(--text-family);
+    display: flex;
+    margin-right: 10%;
+    
+  
+    height: 30px;
+    border-radius: 7px;
+    align-items: center;
+    padding: 5px;
+    padding-left: 1rem;
+    margin-top: 8px;
+    font-size: 20px;
+
+}
+
+.Sidebar-shelf  input{
+  
+    border:none;
+    background-color: transparent;
+    color: white;
+    margin-left: 10px;
+    height: 25px;
+    
+
+
+  }
+
+.Sidebar-shelf input::placeholder{
+  color: var(--text-secondary);
+  font-size:20px;
+  border: none;
+  
+}
+
+.Sidebar-shelf .Sidebar-link .icon{
+
+    font-size: 25px;
+    margin-right: 10px;
+    color: var(--sidebar-secondary);
+
+
+}
+.Sidebar-shelf .Sidebar-search .icon{
+
+    font-size: 25px;
+    margin-right: 10px;
+    color: var(--sidebar-secondary);
+
+
+}
+
+
+.search input:focus{
+  outline: none;
+  overflow: hidden;
+  font-size: 20px;
+  background-color: transparent;
+  width:100%;
+  
+}
+
+
+.search:hover input::placeholder{
+  color: white;
+  font-size: 20px;
+  background-color: var(--sidebar-secondary);
+  
+}
+
+.Sidebar .Sidebar-shelf li:hover{
+  color: white;
+  background-color: var(--sidebar-secondary);
+
+}
+.Sidebar .Sidebar-shelf li:hover .icon{
+  color: white;
+  
+
+}
+
+.backgroundContainer{
+  margin-left: 350px;
+  
+  width: 60%;
+  border-radius: 40px;
+  margin-right: 30px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+
+}
+
+.backgroundContainer img{
+    
+
+    max-width: 100%;
+    height: auto;
+    border-radius: 40px;
+}
