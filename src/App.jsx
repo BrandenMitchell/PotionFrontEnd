@@ -10,11 +10,14 @@ function App() {
 
   return (
     <div className='App'>
-        <div>
-        <Sidebar/>    
-        </div>
-        <div>
-        <CustomBackground/>
+     
+        <div className="nav">
+          <Sidebar/>
+        </div>    
+        
+        <div className='main'>
+          <CustomBackground/>
+
         </div>
       
 

@@ -17,7 +17,7 @@
     --trans-1: .05s ease;
     --trans-2: .2s ease;
     --trans-3: .3s ease;
-    --trans-4: .4s ease;  
+    --trans-4: .4s ease;
 
 }
 
@@ -27,9 +27,7 @@
 
 .App{
   display: flex;
-  justify-content: column;
-  flex-wrap: wrap;
-  gap: 50px;
+  
   width: 100vw;
   height: 100vh;
   margin: none;
@@ -44,24 +42,9 @@ body{
   padding: 0;
 }
 
-
-.nav{
-  display: flex;
-  flex-basis:270px;
-  
-
-}
-.main{
-  display: flex;
-  flex-grow: 1;
-}
-
-
 .Sidebar{
-  display: flex;
   width: 270px;
   height: 100vh;
-  
   background-color: var(--sidebar-primary);
   margin: 0;
   padding: 0;
@@ -143,10 +126,9 @@ body{
   overflow: hidden;
   font-size: 20px;
   background-color: transparent;
-  width:80%;
+  width:100%;
   
 }
-
 
 
 .search:hover input::placeholder{
@@ -168,23 +150,20 @@ body{
 }
 
 .backgroundContainer{
-  display: flex;
-  max-width: 60%;
-  max-height:35% ;
-  margin-top:    50px;
-  margin-bottom: 50px;
-  margin-right:  50px;
-  margin-left:  10px;
+  margin-left: 350px;
+  
+  width: 60%;
   border-radius: 40px;
-  height: auto;
+  margin-right: 30px;
+  padding-top: 30px;
+  margin-bottom: 30px;
 
 }
 
 .backgroundContainer img{
-  
+    
+
     max-width: 100%;
     height: auto;
-    object-fit: cover;
     border-radius: 40px;
 }
-
