@@ -48,12 +48,15 @@ body{
 .nav{
   display: flex;
   flex-basis:270px;
-  
+  min-width: 80px;
+  flex-shrink: 1;
 
 }
 .main{
   display: flex;
-  flex-grow: 1;
+  max-width: 80%;
+  width: 100%;
+  
 }
 
 
@@ -77,9 +80,12 @@ body{
 
   margin-top: 25px;
   padding: 0;
-  margin-left: 15%;
+  
   list-style: none;
-  display: flex;
+  
+
+  width:100%;
+  
   flex-direction: column  ;
 
 }
@@ -89,18 +95,39 @@ body{
     font-family: var(--text-family);
     display: flex;
     margin-right: 10%;
-    
+    margin-left: 10%;
   
+    width: 80%;
     height: 30px;
     border-radius: 7px;
     align-items: center;
     padding: 5px;
     padding-left: 1rem;
-    margin-top: 8px;
+    margin-top: 15px;
     font-size: 20px;
 
 }
 
+
+
+.Sidebar .Sidebar-link.logo {
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-family: var(--text-family);
+  display: flex;
+  margin-right: 10%;
+  margin-left: 10%;
+
+  width: 80%;
+  height: 30px;
+  border-radius: 7px;
+  align-items: center;
+  padding: 5px;
+  padding-left: 1rem;
+  margin-top: 15px;
+  font-size: 20px;
+
+}
 .Sidebar-shelf  input{
   
     border:none;
@@ -120,6 +147,9 @@ body{
   
 }
 
+
+
+
 .Sidebar-shelf .Sidebar-link .icon{
 
     font-size: 25px;
@@ -128,14 +158,182 @@ body{
 
 
 }
-.Sidebar-shelf .Sidebar-search .icon{
+.Sidebar-shelf .Sidebar-link .icon.logo{
 
+    font-size: 40px;
+    
+    margin-right: 10px;
+    color: var(--sidebar-secondary);
+
+
+}
+
+
+.Sidebar-shelf .Sidebar-search .icon{
+  
     font-size: 25px;
     margin-right: 10px;
     color: var(--sidebar-secondary);
 
 
 }
+
+
+/* Side bar is open  */
+
+.nav-open{
+  
+  display: flex;
+  flex-basis: 80px;
+  height: 100vh;
+  
+  
+
+
+}
+
+.Sidebar-open{
+
+  display: flex;
+  width: 80px;
+  height: 100vh;
+  background-color: var(--sidebar-primary);
+  margin: 0;
+  padding: 0;
+  position: fixed;
+
+
+}
+
+
+.Sidebar-open .Sidebar-shelf li .title{
+  text-decoration: none;
+  opacity: 0;
+  font-family: var(--text-family);
+  display: flex;
+  margin-right: 10%;
+  margin-left: 10%;
+
+  max-width: 50px;
+  height: 30px;
+  border-radius: 7px;
+  align-items: center;
+  padding: 5px;
+  padding-left: 1rem;
+  margin-top: 15px;
+  font-size: 20px;
+
+}
+
+.Sidebar-open  input{
+  
+  border:none;
+  background-color: transparent;
+  opacity: 0;
+  margin-left: 10px;
+  height: 25px;
+  
+
+
+}
+
+.Sidebar-open input::placeholder{
+opacity: 0;
+font-size:20px;
+border: none;
+
+}
+
+
+/* End open sidebar   */
+
+
+
+.backgroundContainer{
+  display: flex;
+  flex-direction: column;
+  
+  max-width: 60%;
+  max-height:max-content ;
+  margin-top:    50px;
+  margin-bottom: 50px;
+  margin-right:  50px;
+  margin-left:  10px;
+  border-radius: 40px;
+  height: 100%;
+  position: relative; 
+}
+
+.backgroundContainer img{
+  
+    max-width: 100%;
+    height: auto;
+    
+    border-radius: 40px;
+}
+
+.backgroundContainer .clock{
+  margin: 20px;
+  padding: 0;
+  display: flex;
+  font-family: var(--text-family);
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: transparent;
+  max-height: fit-content;
+  min-width: fit-content;
+  max-width: 150px;  
+  position: absolute;
+  bottom: 0;
+  border-radius: 13%;
+
+
+  
+  
+  
+}
+
+.backgroundContainer .clock ul{
+  
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  max-width: 100%;
+  max-height: 60%;
+  align-items: start;
+  
+}
+
+.clock li{
+  font-size: 55px;
+  color: white;
+  text-align: center ;
+}
+
+.clock .date{
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 20pxpx;
+  display: flex;
+  max-width: 100%;
+  max-height: 40%;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .search input:focus{
@@ -161,30 +359,21 @@ body{
   background-color: var(--sidebar-secondary);
 
 }
+
+.Sidebar-open .Sidebar-shelf li:hover{
+  color: white;
+  background-color: var(--sidebar-secondary);
+  width: 50%;
+
+}
+
 .Sidebar .Sidebar-shelf li:hover .icon{
   color: white;
   
 
 }
-
-.backgroundContainer{
-  display: flex;
-  max-width: 60%;
-  max-height:35% ;
-  margin-top:    50px;
-  margin-bottom: 50px;
-  margin-right:  50px;
-  margin-left:  10px;
-  border-radius: 40px;
-  height: auto;
-
-}
-
-.backgroundContainer img{
+.Sidebar .Sidebar-shelf #collapse_icon:hover{
+  color: rgb(0, 0, 0);
   
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 40px;
-}
 
+}

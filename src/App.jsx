@@ -17,7 +17,7 @@ function App() {
         
         <div className='main'>
           <CustomBackground/>
-
+    
         </div>
       
 
