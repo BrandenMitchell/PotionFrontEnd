@@ -2,6 +2,6 @@ import React from "react";
 
 export const BG_data = [
     {
-        Background_image : 'some image',
+        bg_image : "src/assets/background.jpg",
     }
-]
+];

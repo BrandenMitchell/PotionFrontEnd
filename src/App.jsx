@@ -4,6 +4,9 @@ import './App.css';
 
 import Sidebar from './components/sidebar';
 import CustomBackground from './components/customBackground';
+import RecentlyViewed from './components/RecentlyViewed';
+import Widgets from './components/widgets';
+
 
 function App() {
 
@@ -17,6 +20,15 @@ function App() {
         
         <div className='main'>
           <CustomBackground/>
+
+          {/* removing the below div will reset the webpage to where it should be */}
+          {/* <div className='horizontal-sec'> */}
+            <RecentlyViewed/>
+            <Widgets/>
+          {/* </div> */}
+          
+          
+
     
         </div>
       
