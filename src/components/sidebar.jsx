@@ -28,7 +28,7 @@ function Sidebar(){
                             <i class='bx bx-align-left' id="collapse_icon" onClick={toggle}></i>
                         </div>
                         <div className="title logo">
-                            Lotion
+                            Potion
                         </div>
                         {/* <div className="collapse-icon">
                             <i class='bx bx-right-arrow-alt'></i>
