@@ -71,10 +71,6 @@ body{
   padding: 0;
   position: fixed;
   
-  
-
-
-
 }
 
 .Sidebar .Sidebar-shelf{
@@ -435,24 +431,20 @@ border: none;
 }
 
 
-.horizontal-sec{
+/* .horizontal-sec{
 
   display: flex;
 
 
-}
+} */
 
 .widgets{
   display: flex;
   width: 40%;
   background-color: #2f3e46 ;
-
-
   
 }
 
 .widgets .app-list{
   display: flex;
-  
-  
 }

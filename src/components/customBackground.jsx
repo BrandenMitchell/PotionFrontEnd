@@ -1,7 +1,6 @@
 import React from "react";
 import '../App.css';
 import '../clockscript';
-// import clock from "./digi-clock";
 import { BG_data } from "./BackgroundData";
 
 function CustomBackground(){
